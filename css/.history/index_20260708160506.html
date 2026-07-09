@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Rot: Your Neighborhood Podcast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="images/bar-rot-hero.webp">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- The Navigation Bar/Logo -->
+
+<body>
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">BAR ROT</a>
+        <button class="menu-toggle" aria-label="Open navigation menu">
+            ☰
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#hosts">Hosts</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Title/Hero Section -->
+
+<main>
+    <section id="hero">
+        <div class="hero-content">
+
+            <p class="eyebrow">A late-night podcast</p>
+            <h1>Where bad decisions make good stories.</h1>
+            <p class="hero-text">
+                Bar Rot is a podcast about the chaos of working in nightlife and the friendships 
+                we've made along the way. These are the stories we tell after last call.
+            </p>
+            <div class="hero-buttons">
+                <a href="#episodes" class="btn primary-btn">Listen Now</a>
+                <a href="#about" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+<!-- The About Section -->    
+
+    <section id="about">
+        <div class="section-label">The Culture</div>
+        <div class="about-grid">
+            <div>
+                <h2>Come find a spot at the bar. We have some shit to talk about.</h2>
+            </div>
+            <div>
+                <p>
+                    Welcome to Bar Rot! The late-night podcast where we discuss nightlife,
+                    bad decisions, friendship, dating, work, the chaos of the industry, and how Terry keeps
+                    calling out and still has a job.
+                </p>
+                <p>
+                    Bar Rot was founded by three friends who, by chance, have all worked with each other at different
+                    times in their life. Together the three of them have decades' worth of hospitality experience,
+                    ranging from restaurants, dive bars, cocktail lounges, and nightclubs. One drunken night 
+                    after work, the idea for Bar Rot was born. What started as a post-shift conversation
+                    soon became a podcast. 
+                </p>
+                <p>
+                    So join us for our post-shift therapy session, some trash talk, and a few good laughs.
+                    Bar Rot is for anyone who regrets saying “one more shot”...
+                    and for those of us who pour them.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!--Episodes (Recent Episode) Section -->
+
+    <section id="episodes">
+        <div class="section-label">Latest Episodes</div>
+        <div class="episodes-header">
+            <h2>Real stories with real friends.</h2>
+            <p>Three bartenders. One bottle. No filter.</p>
+        </div>
+        <article class="episode-card">
+            <div class="episode-cover-area">
+                <div class="record">
+                    <div class="record-label">
+                        <span>BAR</span>
+                        <span>ROT</span>
+                    </div>
+                </div>
+                <div class="album-cover">
+                    <img 
+                        src="images/episode-one.webp" 
+                        alt="The Bar Rot hosts sitting together after work unwinding with a few drinks"
+                        class="album-photo"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="episode-info">
+                <p class="episode-number">Episode 01</p>
+                <h3>Better To Leave It Where We Found It</h3>
+                <p class="episode-description">
+                    The stories we tell at the end of the night are the ones we probably shouldn't.
+                    Welcome to the first round of Bar Rot.
+                </p>
+                <div class="episode-meta">
+                    <span>46 minutes</span>
+                    <span>June 2026</span>
+                </div>
+                <div class="cocktail-box">
+                    <p>Poured During This Episode:</p>
+                    <h4>Neat or Chilled</h4>
+                </div>
+                <div class="episode-buttons">
+                    <a href="#" class="btn primary-btn">Listen Now</a>
+                    <a href="#recipes" class="btn secondary-btn">View Recipe</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+<!--Shift Drinks/Recipes Section -->
+
+    <section id="recipes">
+        <div class="section-label">Shifties</div> 
+            <div class="recipes-layout">
+                <div class="recipe-intro">
+                    <h2>Every episode begins with a cocktail and ends with a story.</h2>
+                    <p>
+                        Choose an episode, make the drink, and unwind with us.
+                        It's been one hell of a day, and we all deserve a drink.
+                    </p>
+                    <label for="cocktail-select">What's your poison?</label>
+                    <select id="cocktail-select">
+                        <option value="episode-one">Episode 01: Neat or Chilled</option>
+                        <option value="episode-two">Episode 02: Schedule Not Yet Posted</option>
+                        <option value="episode-three">Episode 03: Schedule Not Yet Posted</option>
+                    </select>
+                </div>
+                <div class="recipe-content">
+                    <p class="episode-number" id="recipe-episode">Episode 01</p>
+                    <h3 id="recipe-title">Neat or Chilled</h3>
+                    <div class="recipe-divider">  
+                    </div>
+                    <div class="recipe-block">
+                        <h4>Recipe</h4>
+                        <ul id="recipe-ingredients">
+                            <li>2 oz. Whiskey, Tequila, Vodka, or Rum</li>
+                            <li>Ice, optional</li>
+                            <li>A long day</li>
+                        </ul>
+                    </div>
+                    <div class="recipe-block">
+                        <h4>Method</h4>
+                        <ol id="recipe-method">
+                            <li>Choose your liquor.</li>
+                            <li>Either pour it straight into a glass, or shake it with ice and strain into a fresh glass.</li>
+                            <li>Go ahead and slam it.</li>
+                            <li>Congrats! You just had your first of many shift drinks.</li>
+                        </ol>
+                    </div>
+                    <div class="recipe-block host-note">
+                        <h4>Behind the Bar</h4>
+                        <p id="recipe-note">“This drink is a simple one, but it is the one we all reach for at the end of a long night.
+                            It is for when everyone says they're only staying for one... and then suddenly it's 3 a.m.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!--Meet the Hosts Section-->
+
+    <section id="hosts">
+        <div class="section-label">The Crew</div>
+        <h2 class="host-title">
+            Meet the Staff.
+        </h2>
+        <p class="hosts-subtitle">
+            Everyone has a story. These three just decided to record them.
+        </p>
+        <div class="section-divider">
+        </div>
+        <div class="host-grid">
+            <article class="host-card">
+<!--Gage Info-->
+                <img 
+                    src="images/gage.webp" 
+                    alt="Gage" 
+                    class="host-photo"
+                    loading="lazy">
+                <div class="host-info">
+                    <h3>Gage</h3>
+                    <p class="host-nickname">
+                        <i>"The Personality Hire"</i>
+                    </p>
+                    <div class="host-divider">
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            SHIFT DRINK:
+                        </span>
+                        <span class="detail-value">
+                            Naked and Famous
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            KNOWN FOR:
+                        </span>
+                        <span class="detail-value">
+                            Drinking tequila out of a Red Bull can.
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            SHIFT QUOTE:
+                        </span>
+                        <span class="detail-value">
+                            "Can we hurry this up? I can feel my buzz starting to wear off."
+                        </span>
+                    </div>
+                </div>
+            </article>
+<!--Aylen Info-->
+            <article class="host-card">
+                <img 
+                    src="images/aylen.webp" 
+                    alt="Aylen" 
+                    class="host-photo"
+                    loading="lazy">
+                <div class="host-info">
+                    <h3>Aylen</h3>
+                    <p class="host-nickname">
+                        <i>"The Firecracker"</i>
+                    </p>
+                    <div class="host-divider">
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            SHIFT DRINK:
+                        </span>
+                        <span class="detail-value">
+                            Mezcal Passionfruit Margarita
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            BIGGEST PET PEEVE:
+                        </span>
+                        <span class="detail-value">
+                            "People waving cash in my face."
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            MOST LIKELY TO:
+                        </span>
+                        <span class="detail-value">
+                            Rip a shot with a guest behind the bar. 
+                        </span>
+                    </div>
+                </div>
+            </article>
+<!--Abby Info-->
+            <article class="host-card">
+                <img 
+                    src="images/abby.webp" 
+                    alt="Abby" 
+                    class="host-photo"
+                    loading="lazy">
+                <div class="host-info">
+                    <h3>Abby</h3>
+                    <p class="host-nickname">
+                        <i>"The Diva"</i>
+                    </p>
+                    <div class="host-divider">
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            SHIFT DRINK:
+                        </span>
+                        <span class="detail-value">
+                            Espresso Martini
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            SIGNATURE MOVE:
+                        </span>
+                        <span class="detail-value">
+                            The Worm
+                        </span>
+                    </div>
+                    <div class="host-detail">
+                        <span class="detail-label">
+                            WORST SHIFT EVER:
+                        </span>
+                        <span class="detail-value">
+                            "Any shift I have to work sober." 
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+<!--Reviews Section-->
+
+    <section id="reviews">
+        <div class="reviews-layout">
+            <div class="reviews-left">
+                <div class="section-label">
+                    The Regulars
+                </div>
+                <h2 class="reviews-title">
+                    What People Are Saying.
+                </h2>
+                <p class="reviews-subtitle">
+                    Every bar has its regulars. Here's what ours have to say.
+                </p>
+                <div class="section-divider">
+                </div>
+            </div>
+            <div class="reviews-right">    
+                <div class="review-slider">
+                    <div class="review-card">
+                        <div class="review-stars" id="review-stars">
+                            <span>&star;&star;&star;&star;&star;
+                            </span>
+                        </div>
+                        <blockquote class="review-text" id="review-text">
+                            "Listening feels like clocking out after a Friday night double."
+                        </blockquote>
+                        <p class="review-author" id="review-author">
+                            - Night Shift Nurse 
+                            <br>Regular at Bar Seat #7
+                        </p>
+                    </div>
+                </div>
+                <div class="review-dots">
+                    <span class="dot active">
+                    </span>
+                    <span class="dot">
+                    </span>
+                    <span class="dot">
+                    </span>
+                    <span class="dot">
+                    </span>
+                    <span class="dot">
+                    </span>
+                </div>
+            </div> 
+        </div>   
+    </section>
+
+<!-- Contact Section -->
+
+    <section id="contact">
+        <div class="section-label">Last Call
+        </div>
+        <div class="contact-layout">
+            <div class="contact-intro">
+                <h2>Send us your stories.</h2>
+                <p>
+                    Got a shift story, cocktail recipe, confession, or something you've been dying to get off your chest? 
+                    Send it our way. We've got the bar and the audience for it. 
+                </p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Regular">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label> 
+                    <input type="email" id="email" placeholder="regular@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="submission-type">What are you sending?</label>
+                    <select id="submission-type">
+                        <option>Shift Story</option>
+                        <option>Cocktail Recipe</option>
+                        <option>Question</option>
+                        <option>Comment</option>
+                        <option>Confession</option>
+                        <option>Other Bad Decision</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Spill It</label>
+                    <textarea id="message" rows="7" placeholder="What's the tea..."></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                    Send It Our Way
+                </button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer></footer>
+
+<!--Java Script/Nav Bar-->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
