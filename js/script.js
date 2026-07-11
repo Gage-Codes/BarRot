@@ -189,6 +189,12 @@ menuToggle.addEventListener("click", function () {
     const expanded = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", String(!expanded));
 });
+navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+        navMenu.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
 
 // Form/Contact Section // 
 
