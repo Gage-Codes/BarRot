@@ -6,13 +6,7 @@
 
 <img src="images/open-graph.webp" width="900">
 
-[ Live Website](#)
 
-
-[ Podcast](#)
-
-
-[ Recipes](#)
 </p>
 Bar Rot began as an exploration of storytelling through web design.
 I wanted to create more than a website, I wanted to build a believable brand. Every page, animation, photograph, and interaction was designed to capture the atmosphere of late-night conversations, vinyl records spinning in dimly lit bars, and the culture that grows around a great cocktail.
